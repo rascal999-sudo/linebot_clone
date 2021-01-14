@@ -15,7 +15,7 @@ const bot = linebot({
 const req = {};
 req.headers = {
   'Content-Type': 'application/json',
-  Authorization: 'Bearer token',
+  Authorization: 'Bearer CLik/GUyMRxlSY3UvOsm/BX3z8eI27c1bL6MmtM7845+aeeshy3MEjskLyMga/UbKRgtCia39kv7om1PqpOuI/EcL1gpf4yWkgM6N0fWto8fGLhoQypHt2gETU6ShSihl0d69FvCU7zdZyJy9DEoSgdB04t89/1O/w1cDnyilFU=',
   'X-Line-Signature': 'signature'
 };
 req.body = {
