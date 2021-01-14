@@ -12,6 +12,8 @@ const bot = linebot({
   channelAccessToken: 'token'
 });
 
+console.log("linebot.test.js in");
+
 const req = {};
 req.headers = {
   'Content-Type': 'application/json',
