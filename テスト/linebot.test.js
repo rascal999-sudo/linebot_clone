@@ -7,9 +7,9 @@ const nock = require('nock');
 const line = 'https://api.line.me/v2/bot';
 
 const bot = linebot({
-  channelId: 1234567890,
-  channelSecret: 'secret',
-  channelAccessToken: 'token'
+  channelId: 1655577582,
+  channelSecret: 'a6cb3ed2579015999f517845b7eb9e3e',
+  channelAccessToken: 'CLik / GUyMRxlSY3UvOsm / BX3z8eI27c1bL6MmtM7845 + aeeshy3MEjskLyMga / UbKRgtCia39kv7om1PqpOuI / EcL1gpf4yWkgM6N0fWto8fGLhoQypHt2gETU6ShSihl'
 });
 
 console.log("linebot.test.js in");
@@ -17,7 +17,7 @@ console.log("linebot.test.js in");
 const req = {};
 req.headers = {
   'Content-Type': 'application/json',
-  Authorization: 'Bearer CLik/GUyMRxlSY3UvOsm/BX3z8eI27c1bL6MmtM7845+aeeshy3MEjskLyMga/UbKRgtCia39kv7om1PqpOuI/EcL1gpf4yWkgM6N0fWto8fGLhoQypHt2gETU6ShSihl0d69FvCU7zdZyJy9DEoSgdB04t89/1O/w1cDnyilFU=',
+  Authorization: 'Beare token',
   'X-Line-Signature': 'signature'
 };
 req.body = {
