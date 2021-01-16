@@ -120,12 +120,12 @@ describe('linebot', function () {
       assert.equal(bot.listen.length, 3);
     });
     it('should start http server.', function (done) {
-      bot.listen('/linewebhook', 3000, function () {
+      bot.listen('/linewebhook', 80, function () {
         done();
       });
     });
     it('should handle POST request and return empty object.', function (done) {
-      fetch('http://localhost:3000/linewebhook', { method: 'POST', headers: req.headers, body: JSON.stringify(req.body) }).then(function (res) {
+      fetch('/linewebhook', { method: 'POST', headers: req.headers, body: JSON.stringify(req.body) }).then(function (res) {
         assert.equal(res.status, 200);
         return res.json();
       }).then(function (data) {
