@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "//": "node examples/demo.js",
-    "start": "node examples/echo.js",
+    "//": "node examples/echo.js",
+    "start": "node examples/demo.js",
     "pretest": "eslint index.js lib/**/*.js test/**/*.js",
     "test": "mocha --timeout 5000 --exit",
     "lint": "eslint index.js lib/**/*.js test/**/*.js examples/**/*.js"
