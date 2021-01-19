@@ -11,7 +11,7 @@
     "//": "node examples/demo.js",
     "//": "node examples/echo.js",
     "//": "node examples/demo.js",
-    "start": "node examples/echo-express-long.js",
+    "start": "node examples/demo.js",
     "pretest": "eslint index.js lib/**/*.js test/**/*.js",
     "test": "mocha --timeout 5000 --exit",
     "lint": "eslint index.js lib/**/*.js test/**/*.js examples/**/*.js"
