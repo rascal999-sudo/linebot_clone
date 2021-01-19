@@ -8,6 +8,7 @@ const bot = linebot({
 });
 
 bot.on('message', function (event) {
+  consolelog('**demo.js message event in')
   switch (event.message.type) {
     case 'text':
       switch (event.message.text) {
