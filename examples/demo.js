@@ -9,6 +9,7 @@ const bot = linebot({
 
 bot.on('message', function (event) {
   console.log('**demo.js message event in');
+  console.log('**%O', event);
   switch (event.message.type) {
     case 'text':
       switch (event.message.text) {
@@ -39,7 +40,7 @@ bot.on('message', function (event) {
           });
           break;
         case 'Push':
-          bot.push('U17448c796a01b715d293c34810985a4c', ['Hey!', 'สวัสดี ' + String.fromCharCode(0xD83D, 0xDE01)]);
+          bot.push(event.message.to, event.message.messages);
           break;
         case 'Push2':
           bot.push('Cba71ba25dafbd6a1472c655fe22979e2', 'Push to group');
