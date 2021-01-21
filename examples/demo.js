@@ -114,7 +114,7 @@ bot.on('message', function (event) {
       event.reply('Nice audio!');
       break;
     case 'location':
-      event.reply(['That\'s a good location!', 'Lat:' + event.message.latitude, 'Long:' + event.message.longitude]);
+      event.reply([event.message.address, 'Lat:' + event.message.latitude, 'Long:' + event.message.longitude]);
       break;
     case 'sticker':
       event.reply({
