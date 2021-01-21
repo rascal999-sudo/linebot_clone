@@ -40,7 +40,7 @@ bot.on('message', function (event) {
           });
           break;
         case 'Push':
-          bot.push(event.destination, event.massage.data);
+          bot.push(event.destination, event.message.data);
           break;
         case 'Push2':
           bot.push('Cba71ba25dafbd6a1472c655fe22979e2', 'Push to group');
